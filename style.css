@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.taskBlockAdd {
+    padding: 30px;
+    background-color: antiquewhite;
+    border-radius: 2%;
+    margin: 50px;
+}
+
+.sectionListTask {
+    width: 700px;
+    min-height: 500px;
+    height: auto;
+    background: linear-gradient(120deg, rgb(138, 53, 138), rgb(244, 112, 134));
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.list {
+    list-style: none;
+    width: 510px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.list__item {
+    display: flex;
+    border-radius: 2%;
+    padding: 30px;
+    background-color: antiquewhite;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list__itemBlock {
+    width: 500px;
+    padding: 10px;
+    border-bottom: 2px solid rgb(177, 172, 172);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input {
+    width: 350px;
+    height: 50px;
+    border: 2px solid rgb(138, 53, 138);
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px 2px white;
+    font-size: 1.2rem;
+}
+
+.btn {
+    width: 100px;
+    height: 50px;
+    border: 2px solid rgb(138, 53, 138)t;
+    background-color: rgb(138, 53, 138);
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+
+
+.paragraf {
+    font-size: 1.5rem;
+    color: black;
+}
