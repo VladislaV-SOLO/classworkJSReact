@@ -3,7 +3,6 @@ const button = document.querySelector('.add')
 const list = document.querySelector('.list')
 
 
-
 button.addEventListener('click', renderItem)
 
 
@@ -16,6 +15,7 @@ function renderItem() {
     </div>
 </li>`
 
+    input.value = ''
 list.insertAdjacentHTML('afterbegin', item)
 
     const btnDelete = document.querySelector('.delete')
@@ -23,20 +23,11 @@ list.insertAdjacentHTML('afterbegin', item)
         console.log(this.parentNode.parentNode.dataset.id);
         const id = this.parentNode.parentNode.dataset.id
 
-        delete2(id)
+        deleteListItem(id)
     })
 }
 
-function delete2(id) {
+function deleteListItem(id) {
     const li = document.querySelectorAll('li')
     li.forEach(el => el.dataset.id === id && el.remove())
 }
-
-// function lists() {
-//     let li = document.querySelector('.listItem')
-
-
-//     list.insertAdjacentElement('afterbegin', li)
-// }
-
-// lists()
